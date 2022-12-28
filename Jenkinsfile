@@ -16,9 +16,17 @@ pipeline {
                 //Run maven on Unix agent
                 steps
                 {
-                   sh 'mvn clean package'
+                   sh 'mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install'
                 }
         }
+
+         stage('SonarQube Analysis'){
+                        //Run maven on Unix agent
+                        steps
+                        {
+                           sh 'mvn sonar:sonar'
+                        }
+                }
 
 }
 }
