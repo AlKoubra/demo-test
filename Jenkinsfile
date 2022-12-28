@@ -9,7 +9,7 @@ pipeline {
             //Run maven on Unix agent
             steps
             {
-               git branch :'master' ,url:'https://github.com/koubra999/dama-test-tonux-updated.git'
+               git branch :'master' ,url:'https://github.com/koubra999/demo-test.git'
             }
     }
        stage('Build'){
