@@ -16,7 +16,7 @@ pipeline {
                 //Run maven on Unix agent
                 steps
                 {
-                   sh 'mvn sonar:sonar'
+                   sh 'mvn clean package'
                 }
         }
 
