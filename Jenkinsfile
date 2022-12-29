@@ -12,14 +12,14 @@ pipeline {
                git branch :'master' ,url:'https://github.com/koubra999/demo-test.git'
             }
     }
-      /* stage('Build'){
+      stage('Build'){
                 //Run maven on Unix agent
                 steps
                 {
                    sh 'mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install'
                 }
         }
-*/
+
          stage('SonarQube Analysis'){
                         //Run maven on Unix agent
                         steps
