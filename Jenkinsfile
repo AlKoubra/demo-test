@@ -16,7 +16,7 @@ pipeline {
                 //Run maven on Unix agent
                 steps
                 {
-                   sh 'mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install'
+                   sh 'mvn  clean org.jacoco:jacoco-maven-plugin:prepare-agent install'
                 }
         }
 
